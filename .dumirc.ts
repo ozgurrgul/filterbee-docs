@@ -17,11 +17,13 @@ export default defineConfig({
         link: 'components/filters-container',
         title: 'Components',
       },
-      {
-        link: 'https://github.com/ozgurrgul/filterbee',
-        title: 'Github',
-      },
     ],
+    prefersColor: {
+      switch: true,
+    },
+    socialLinks: {
+      github: 'https://github.com/ozgurrgul/filterbee',
+    },
   },
   styles: [fs.readFileSync('./node_modules/filterbee/dist/style.css', 'utf-8')],
   locales: [

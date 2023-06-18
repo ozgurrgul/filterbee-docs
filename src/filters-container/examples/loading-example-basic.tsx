@@ -7,7 +7,7 @@ import {
 import React, { useState } from 'react';
 import { DemoPreviewer } from '../../components/DemoPreviewer';
 
-type MyProductFilters = 'product-custom-search';
+type MyProductFilters = 'product-condition' | 'product-style';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] =
@@ -21,13 +21,36 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-custom-search': {
-      type: 'input',
+    'product-condition': {
+      type: 'radio',
+      options: [
+        {
+          optionId: 'used',
+          title: 'Used',
+        },
+        {
+          optionId: 'new',
+          title: 'Brand new',
+        },
+      ],
+      title: 'Product condition',
       ui: {
-        inputType: 'text',
-        label: 'Search items',
+        loading: true,
       },
-      title: 'My custom search  ',
+    },
+    'product-style': {
+      type: 'radio',
+      options: [
+        {
+          optionId: 'black',
+          title: 'Black',
+        },
+        {
+          optionId: 'white',
+          title: 'White',
+        },
+      ],
+      title: 'Color',
     },
   };
 

@@ -162,3 +162,8 @@ Rating filter category allows user to apply a rating filtering. Most of e-commer
 | `type`    | `"rating"`                    | Type must be 'rating'.              |
 | `ui`      | `{ loading?: boolean, amountOfStars: number }` | Optional UI properties.         |
 
+### Common UI options
+
+For now, `ui` configuration only supports `loading` prop as common property between all filter category types.
+
+<code src="./examples/loading-example-basic.tsx"></code>
