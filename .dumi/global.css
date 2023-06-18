@@ -270,6 +270,14 @@ body, .dumi-default-doc-layout, .markdown {
     margin-top: 4px;
 }
 
+@media only screen and (max-width: 767px) {
+    .dumi-default-header-right {
+        backdrop-filter: unset !important;
+        background-color: white !important;
+    }
+}
+
+
 .markdown table  code {
     word-break: keep-all;
     white-space: nowrap;
