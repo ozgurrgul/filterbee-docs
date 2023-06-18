@@ -1,29 +1,15 @@
 ---
-title: A static site based on dumi
-hero:
-  title: Site
-  description: A static site based on dumi
-  actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
+title: Filterbee - Filtering and e-commerce components for your React website
+
 ---
 
-filterbeeee
+<div style="font-size: 3rem; letter-spacing: -.05em; font-weight: bold; margin-top:px;">
+Filtering and e-commerce components
+</div>
 
-```jsx
-import React from 'react';
+<div style="color: hsl(var(--muted-foreground)); margin-top:4px;">
+Built with React.js and <a href="https://github.com/Shadcn/ui" target="_blank">Shadcn/ui</a> components. Fully typed with <u>Typescript</u>.
+</div>
 
-export default () => <h1>Hello dumi!</h1>;
-```
+
+<code src="./index-example.tsx"></code>

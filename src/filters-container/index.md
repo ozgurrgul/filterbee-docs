@@ -1,3 +1,8 @@
+---
+order: 1
+group: components
+---
+
 The `FiltersContainer<T>` component allows users to filter data based on different criteria. It supports various filter types, such as `radio` buttons, `multi-select`, `range`, `input` fields, and `rating` stars. It uses accordions to display filter categories, making the UI clean and easy to navigate. You can also customize UI elements like the `loading` indicator.
 
 | Property          | Type                                                | Description                                                                                              |

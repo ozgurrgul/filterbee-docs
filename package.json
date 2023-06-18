@@ -1,5 +1,5 @@
 {
-  "name": "filterbeeee",
+  "name": "filterbee-docs",
   "version": "0.0.1",
   "description": "A static site based on dumi",
   "scripts": {
@@ -30,6 +30,6 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
-    "filterbee": "^0.0.83"
+    "filterbee": "^0.0.90"
   }
 }
