@@ -17,6 +17,10 @@ export default defineConfig({
         link: 'components/filters-container',
         title: 'Components',
       },
+      {
+        link: 'utilities/get-uniq-values-for-filter',
+        title: 'Utilities',
+      },
     ],
     prefersColor: {
       switch: true,

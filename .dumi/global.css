@@ -246,7 +246,29 @@ body, .dumi-default-doc-layout, .markdown {
     border-radius: 6px !important;
 }
 
-.dumi-default-color-switch {}
+/* TODO show later */
+.dumi-default-color-switch {
+    display: none;
+}
+
+.dumi-default-sidebar {
+    width: 250px !important;
+}
+
+.dumi-default-sidebar > dl > dd > a:hover, .dumi-default-navbar a:hover {
+    color: rgb(15, 23, 42) !important;
+    text-decoration: underline;
+}
+
+.dumi-default-sidebar > dl > dd > a.active {
+    color: rgb(15, 23, 42) !important;
+    font-weight: 600 !important;
+    text-decoration: underline;
+}
+
+.dumi-default-logo {
+    margin-top: 4px;
+}
 
 .markdown table  code {
     word-break: keep-all;
