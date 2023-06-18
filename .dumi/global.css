@@ -1,3 +1,8 @@
 .dumi-default-previewer-demo {
-    padding: 4px;
+    padding: 0px;
+}
+
+.markdown table  code {
+    word-break: keep-all;
+    white-space: nowrap;
 }

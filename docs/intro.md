@@ -109,4 +109,4 @@ Finally, lets feed these configuration to our renderer layer:
 
 Final example with full React component (play with filters and observe `console`!):
 
-<code src="./filters-container/guide-example.tsx"></code>
+<code src="./intro-example.tsx"></code>

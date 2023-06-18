@@ -6,8 +6,7 @@
     "start": "npm run dev",
     "dev": "dumi dev",
     "build": "dumi build",
-    "prepare": "husky install && dumi setup",
-    "deploy": "gh-pages -d dist"
+    "prepare": "husky install && dumi setup"
   },
   "authors": [],
   "license": "MIT",
@@ -31,8 +30,6 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
-    "@umijs/plugins": "^4.0.71",
-    "filterbee": "^0.0.83",
-    "tailwindcss": "^3.3.2"
+    "filterbee": "^0.0.83"
   }
 }

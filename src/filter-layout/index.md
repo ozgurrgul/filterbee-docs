@@ -1,0 +1,1 @@
+The `FilterLayout<T>` component is essentially a  wrapper around `FiltersContainer<T>` to provide a desktop and mobile layout for your e-commerce page.
