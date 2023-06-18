@@ -3,6 +3,8 @@ order: 1
 group: components
 ---
 
+## FiltersContainer
+
 The `FiltersContainer<T>` component allows users to filter data based on different criteria. It supports various filter types, such as `radio` buttons, `multi-select`, `range`, `input` fields, and `rating` stars. It uses accordions to display filter categories, making the UI clean and easy to navigate. You can also customize UI elements like the `loading` indicator.
 
 | Property          | Type                                                | Description                                                                                              |
@@ -10,6 +12,8 @@ The `FiltersContainer<T>` component allows users to filter data based on differe
 | `categories`      | `FilterCategoriesType<T>`                | An object that holds categories. Each category is a filter type.                                         |
 | `onChange`        | `(newFilters: Partial<AppliedFiltersType<T>>) => void` | Callback function that gets called when the filter value changes.               |
 
+
+:::info
 
 `FilterCategoriesType<T>` essentially just a dictionary of `FilterCategoryType` items. Example:
 
@@ -51,6 +55,7 @@ The `FiltersContainer<T>` component allows users to filter data based on differe
   };
 ```
 
+:::
 Each `options` consist of array of `FilterCategoryOptionType` (`{optionId: string; title?: string;}`). In order to render multiple choice of filtering capability, you will need to provide array of `options` most of the time.
 
 :::info

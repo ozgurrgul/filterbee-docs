@@ -1,8 +1,7 @@
-# Intro
+## Installation
 
 __Filterbee__ is a set of components that you can use in your e-commerce pages that your building with __React.js__ and __Shadcn/ui__ components (wrapper around `RadixUI` and `Tailwindcss`). It's fully typed with <u>typescript</u> and provides easy implementation.
 
-## Installation
 
 In order to install, you have to have a working react.js project. Then install dependecy:
 
