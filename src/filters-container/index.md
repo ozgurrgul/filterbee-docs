@@ -20,7 +20,7 @@ The `FiltersContainer<T>` component allows users to filter data based on differe
 ```ts
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-category': {
+    'filter-category': {
       type: 'multi-select',
       options: [
         {
@@ -34,7 +34,7 @@ The `FiltersContainer<T>` component allows users to filter data based on differe
       ],
       title: 'Categories',
     },
-    'product-brand': {
+    'filter-brand': {
       type: 'multi-select',
       options: [
         {

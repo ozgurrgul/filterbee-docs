@@ -44,7 +44,7 @@ The function returns an array of filtered entities based on the applied filters.
 ```typescript
 import { getFilteredEntities, FilterCategoriesType, AppliedFiltersType } from 'filterbee';
 
-type MyProductFilters2 = 'product-brand' | 'product-price';
+type MyProductFilters = 'filter-brand' | 'filter-price';
 type Product = {
   id: number;
   name: string;
@@ -59,8 +59,8 @@ const products: Product[] = [
   { id: 4, name: 'Product D', price: 100, brand: 'puma' },
 ];
 
-const filterCategories: FilterCategoriesType<MyProductFilters2> = {
-  'product-brand': {
+const filterCategories: FilterCategoriesType<MyProductFilters> = {
+  'filter-brand': {
     title: 'Brand',
     type: 'multi-select',
     options: [
@@ -69,7 +69,7 @@ const filterCategories: FilterCategoriesType<MyProductFilters2> = {
       { optionId: 'puma', title: 'Puma' },
     ],
   },
-  'product-price': {
+  'filter-price': {
     title: 'Price',
     type: 'range',
     options: {
@@ -79,8 +79,8 @@ const filterCategories: FilterCategoriesType<MyProductFilters2> = {
   },
 };
 
-const appliedFilters: Partial<AppliedFiltersType<MyProductFilters2>> = {
-  'product-brand': ['nike'],
+const appliedFilters: Partial<AppliedFiltersType<MyProductFilters>> = {
+  'filter-brand': ['nike'],
 };
 
 /**
@@ -92,13 +92,13 @@ const appliedFilters: Partial<AppliedFiltersType<MyProductFilters2>> = {
  */
 const filterCategoryToEntityPropertMap: FilterCategoryToEntityPropertMap<
   Product,
-  MyProductFilters2
+  MyProductFilters
 > = {
-  'product-brand': 'brand',
-  'product-price': 'price',
+  'filter-brand': 'brand',
+  'filter-price': 'price',
 };
 
-const filteredProducts = getFilteredEntities<Product, MyProductFilters2>({
+const filteredProducts = getFilteredEntities<Product, MyProductFilters>({
   entities: products,
   filterCategories,
   appliedFilters,

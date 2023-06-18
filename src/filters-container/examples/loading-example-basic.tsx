@@ -7,7 +7,7 @@ import {
 import React, { useState } from 'react';
 import { DemoPreviewer } from '../../components/DemoPreviewer';
 
-type MyProductFilters = 'product-condition' | 'product-style';
+type MyProductFilters = 'filter-condition' | 'filter-style';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] =
@@ -21,7 +21,7 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-condition': {
+    'filter-condition': {
       type: 'radio',
       options: [
         {
@@ -38,7 +38,7 @@ const Demo: React.FC = () => {
         loading: true,
       },
     },
-    'product-style': {
+    'filter-style': {
       type: 'radio',
       options: [
         {

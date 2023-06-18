@@ -7,7 +7,7 @@ import {
 import React, { useState } from 'react';
 import { DemoPreviewer } from '../../components/DemoPreviewer';
 
-type MyProductFilters = 'product-style-types';
+type MyProductFilters = 'filter-style-types';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] =
@@ -21,7 +21,7 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-style-types': {
+    'filter-style-types': {
       type: 'multi-select',
       options: [
         {

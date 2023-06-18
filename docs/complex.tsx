@@ -20,17 +20,17 @@ type MyProduct = {
 };
 
 type MyProductFilters =
-  | 'product-category'
-  | 'product-brand'
-  | 'product-price'
-  | 'product-rating'
-  | 'product-id-test';
+  | 'filter-category'
+  | 'filter-brand'
+  | 'filter-price'
+  | 'filter-rating'
+  | 'filter-id-test';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] = useState<
     Partial<AppliedFiltersType<MyProductFilters>>
   >({
-    'product-brand': ['Apple', 'Samsung', 'Huawei', 'Golden'],
+    'filter-brand': ['Apple', 'Samsung', 'Huawei', 'Golden'],
   });
 
   const [products, setProducts] = useState<MyProduct[]>([]);
@@ -56,7 +56,7 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-category': {
+    'filter-category': {
       type: 'multi-select',
       options: uniqProductCategories.map((productCategory) => ({
         optionId: productCategory,
@@ -68,7 +68,7 @@ const Demo: React.FC = () => {
         loading: productsLoading,
       },
     },
-    'product-brand': {
+    'filter-brand': {
       type: 'multi-select',
       options: uniqProductBrands.map((productBrand) => ({
         optionId: productBrand,
@@ -85,7 +85,7 @@ const Demo: React.FC = () => {
         },
       },
     },
-    'product-price': {
+    'filter-price': {
       type: 'range',
       options: {
         min: {
@@ -100,7 +100,7 @@ const Demo: React.FC = () => {
         loading: productsLoading,
       },
     },
-    'product-id-test': {
+    'filter-id-test': {
       type: 'radio',
       options: [
         { optionId: '1', title: 'Iphone 9 filter only' },
@@ -111,7 +111,7 @@ const Demo: React.FC = () => {
         loading: productsLoading,
       },
     },
-    'product-rating': {
+    'filter-rating': {
       type: 'rating',
       title: 'Rating',
       ui: {

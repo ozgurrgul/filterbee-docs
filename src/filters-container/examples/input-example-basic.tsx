@@ -7,7 +7,7 @@ import {
 import React, { useState } from 'react';
 import { DemoPreviewer } from '../../components/DemoPreviewer';
 
-type MyProductFilters = 'product-custom-search';
+type MyProductFilters = 'filter-custom-search';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] =
@@ -21,7 +21,7 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-custom-search': {
+    'filter-custom-search': {
       type: 'input',
       ui: {
         inputType: 'text',

@@ -23,17 +23,17 @@ type MyProduct = {
 };
 
 type MyProductFilters =
-  | 'product-category'
-  | 'product-brand'
-  | 'product-price'
-  | 'product-rating'
-  | 'product-id-test';
+  | 'filter-category'
+  | 'filter-brand'
+  | 'filter-price'
+  | 'filter-rating'
+  | 'filter-id-test';
 
 const Demo: React.FC = (args) => {
   const [appliedFilters, setAppliedFilters] = useState<
     Partial<AppliedFiltersType<MyProductFilters>>
   >({
-    'product-brand': ['Apple', 'Samsung', 'Huawei'],
+    'filter-brand': ['Apple', 'Samsung', 'Huawei'],
   });
 
   const [products, setProducts] = useState<MyProduct[]>([]);
@@ -60,7 +60,7 @@ const Demo: React.FC = (args) => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-brand': {
+    'filter-brand': {
       type: 'multi-select',
       options: uniqProductBrands.map((productBrand) => ({
         optionId: productBrand,
@@ -77,7 +77,7 @@ const Demo: React.FC = (args) => {
         },
       },
     },
-    'product-category': {
+    'filter-category': {
       type: 'multi-select',
       options: uniqProductCategories.map((productCategory) => ({
         optionId: productCategory,
@@ -89,7 +89,7 @@ const Demo: React.FC = (args) => {
         loading: productsLoading,
       },
     },
-    'product-price': {
+    'filter-price': {
       type: 'range',
       options: {
         min: {
@@ -104,7 +104,7 @@ const Demo: React.FC = (args) => {
         loading: productsLoading,
       },
     },
-    'product-id-test': {
+    'filter-id-test': {
       type: 'radio',
       options: [
         { optionId: '1', title: 'Iphone 9 filter only' },
@@ -115,7 +115,7 @@ const Demo: React.FC = (args) => {
         loading: productsLoading,
       },
     },
-    'product-rating': {
+    'filter-rating': {
       type: 'rating',
       title: 'Rating',
       ui: {
@@ -129,11 +129,11 @@ const Demo: React.FC = (args) => {
     MyProduct,
     MyProductFilters
   > = {
-    'product-category': 'category',
-    'product-brand': 'brand',
-    'product-price': 'price',
-    'product-id-test': 'id',
-    'product-rating': 'rating',
+    'filter-category': 'category',
+    'filter-brand': 'brand',
+    'filter-price': 'price',
+    'filter-id-test': 'id',
+    'filter-rating': 'rating',
   };
 
   const filteredEntities = getFilteredEntities<MyProduct, MyProductFilters>({

@@ -118,7 +118,7 @@ Declare the needed CSS variables:
 Create your filter type. It can be many union types or just one as it's on this guide (more on this later):
 
 ``` ts
-type MyProductFilters = 'product-category' | 'product-brand';
+type MyProductFilters = 'filter-category' | 'filter-brand';
 ```
 
 These type strings are just identifiers for the app and library to pass around and distinguish.
@@ -129,7 +129,7 @@ Now, lets declare our filter categories, which is basically saying what our `MyP
 
 ``` ts
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-category': {
+    'filter-category': {
       type: 'multi-select',
       options: [
         {
@@ -143,7 +143,7 @@ Now, lets declare our filter categories, which is basically saying what our `MyP
       ],
       title: 'Categories',
     },
-    'product-brand': {
+    'filter-brand': {
       type: 'multi-select',
       options: [
         {

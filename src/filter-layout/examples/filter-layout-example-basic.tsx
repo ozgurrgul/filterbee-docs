@@ -6,7 +6,7 @@ import {
 } from 'filterbee';
 import React, { useState } from 'react';
 
-type MyProductFilters = 'product-category' | 'product-brand';
+type MyProductFilters = 'filter-category' | 'filter-brand';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] =
@@ -20,7 +20,7 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-category': {
+    'filter-category': {
       type: 'multi-select',
       options: [
         {
@@ -34,7 +34,7 @@ const Demo: React.FC = () => {
       ],
       title: 'Categories',
     },
-    'product-brand': {
+    'filter-brand': {
       type: 'multi-select',
       options: [
         {

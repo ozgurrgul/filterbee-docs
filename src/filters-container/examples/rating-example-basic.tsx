@@ -7,7 +7,7 @@ import {
 import React, { useState } from 'react';
 import { DemoPreviewer } from '../../components/DemoPreviewer';
 
-type MyProductFilters = 'product-ratings';
+type MyProductFilters = 'filter-ratings';
 
 const Demo: React.FC = () => {
   const [appliedFilters, setAppliedFilters] =
@@ -21,7 +21,7 @@ const Demo: React.FC = () => {
   };
 
   const categories: FilterCategoriesType<MyProductFilters> = {
-    'product-ratings': {
+    'filter-ratings': {
       type: 'rating',
       ui: {
         amountOfStars: 4,
