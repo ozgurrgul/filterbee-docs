@@ -158,7 +158,6 @@ const Demo: React.FC = (args) => {
         }}
       >
         <div className="p-6">
-          <pre>{JSON.stringify(appliedFilters, null, 4)}</pre>
           <SimpleProductLayout
             products={filteredEntities.map((p) => ({
               id: p.id,
