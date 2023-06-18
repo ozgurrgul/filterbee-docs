@@ -1,7 +1,8 @@
-## Installation
 
-__Filterbee__ is a set of components that you can use in your e-commerce pages that your building with __React.js__ and __Shadcn/ui__ components (wrapper around `RadixUI` and `Tailwindcss`). It's fully typed with <u>typescript</u> and provides easy implementation.
+__Filterbee__ is a set of components that you can use in your e-commerce pages that your building with __React.js__ and __Shadcn/ui__ components (wrapper around `Radix UI` and `Tailwindcss`). It's fully typed with <u>typescript</u> and provides easy implementation.
 
+
+## Install library
 
 In order to install, you have to have a working react.js project. Then install dependecy:
 
@@ -25,6 +26,8 @@ import {
   FiltersContainer,
 } from 'filterbee';
 ```
+
+## Configure CSS
 
 For styling, import the needed CSS file from node_modules:
 
@@ -115,6 +118,8 @@ Declare the needed CSS variables:
 
 ```
 
+## Create your first filter
+
 Create your filter type. It can be many union types or just one as it's on this guide (more on this later):
 
 ``` ts
@@ -192,8 +197,9 @@ Finally, lets feed these configuration to our renderer layer:
     </FilterLayoutContextProvider>
   );
 
-
 ```
+
+## Preview
 
 Final example with full React component (play with filters and observe `console`!):
 

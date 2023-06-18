@@ -30,7 +30,7 @@
     "prettier": "^2.7.1"
   },
   "dependencies": {
-    "filterbee": "^0.0.90",
+    "filterbee": "^0.0.91",
     "lucide-react": "^0.244.0"
   }
 }

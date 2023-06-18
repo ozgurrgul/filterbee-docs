@@ -282,3 +282,9 @@ body, .dumi-default-doc-layout, .markdown {
 #docs-demo-index-example {
     margin-top: 4px !important;
 }
+
+#src-simple-product-layout-demo-simple-product-layout-basic-example .dumi-default-previewer-demo{
+    max-height: 60vh !important;
+    overflow-y: auto;
+
+}

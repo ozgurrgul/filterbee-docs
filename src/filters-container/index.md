@@ -3,8 +3,6 @@ order: 1
 group: components
 ---
 
-## FiltersContainer
-
 The `FiltersContainer<T>` component allows users to filter data based on different criteria. It supports various filter types, such as `radio` buttons, `multi-select`, `range`, `input` fields, and `rating` stars. It uses accordions to display filter categories, making the UI clean and easy to navigate. You can also customize UI elements like the `loading` indicator.
 
 | Property          | Type                                                | Description                                                                                              |
@@ -63,7 +61,7 @@ Each `options` consist of array of `FilterCategoryOptionType` (`{optionId: strin
 :::
 
 
-### FilterCategoryType
+## FilterCategoryType
 
 This is a union type combining all possible filter category types:
 
@@ -73,19 +71,19 @@ This is a union type combining all possible filter category types:
 - `InputFilterCategoryType`
 - `RatingFilterCategoryType`
 
-### Multi Select
+## Multi Select
 
 Multi select filtering category is the most common and most powerful filtering component. It allows user to choose <u>multiple type</u> of items from a dropdown. 
 
-#### Basic example
+### Basic example
 
 <code src="./examples/multi-select-example-basic.tsx"></code>
 
-#### More advanced example
+### More advanced example
 
 <code src="./examples/multi-select-example-advanced.tsx"></code>
 
-#### Api
+### Api
 
 | Property       | Type                          | Description                                            |
 |----------------|-------------------------------|--------------------------------------------------------|
@@ -97,15 +95,15 @@ Multi select filtering category is the most common and most powerful filtering c
 
 <hr/>
 
-### Radio
+## Radio
 
 Radio filter category allows user to select only <u>one</u> from the provided options. Common when the options are limited.
 
-#### Basic example
+### Basic example
 
 <code src="./examples/radio-example-basic.tsx"></code>
 
-#### Api
+### Api
 
 | Property  | Type                          | Description                      |
 |-----------|-------------------------------|----------------------------------|
@@ -116,15 +114,15 @@ Radio filter category allows user to select only <u>one</u> from the provided op
 
 <hr/>
 
-### Range
+## Range
 
 Range filter category allows user to define minimum and maxiumum ranges. Common for price filtering.
 
-#### Basic example
+### Basic example
 
 <code src="./examples/range-example-basic.tsx"></code>
 
-#### Api
+### Api
 
 | Property  | Type                          | Description                         |
 |-----------|-------------------------------|-------------------------------------|
@@ -135,15 +133,15 @@ Range filter category allows user to define minimum and maxiumum ranges. Common 
 
 <hr/>
 
-### Input
+## Input
 
 Input filter category allows user to type into provided input. It can be used for a custom search in backend api or other reasons.
 
-#### Basic example
+### Basic example
 
 <code src="./examples/input-example-basic.tsx"></code>
 
-#### Api
+### Api
 
 | Property  | Type                          | Description                         |
 |-----------|-------------------------------|-------------------------------------|
@@ -151,15 +149,15 @@ Input filter category allows user to type into provided input. It can be used fo
 | `type`    | `"input"`                     | Type must be 'input'.               |
 | `ui`      | `{ loading?: boolean; label: string; inputType: HTMLInputTypeAttribute; }`                      | Optional UI properties.             |
 
-### Rating
+## Rating
 
 Rating filter category allows user to apply a rating filtering. Most of e-commerce websites have rating visibility based on user reviews on the products.
 
-#### Basic example
+### Basic example
 
 <code src="./examples/rating-example-basic.tsx"></code>
 
-#### Api
+### Api
 
 | Property  | Type                          | Description                         |
 |-----------|-------------------------------|-------------------------------------|
@@ -167,7 +165,7 @@ Rating filter category allows user to apply a rating filtering. Most of e-commer
 | `type`    | `"rating"`                    | Type must be 'rating'.              |
 | `ui`      | `{ loading?: boolean, amountOfStars: number }` | Optional UI properties.         |
 
-### Common UI options
+## Common UI options
 
 For now, `ui` configuration only supports `loading` prop as common property between all filter category types.
 

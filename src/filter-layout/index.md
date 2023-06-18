@@ -3,11 +3,11 @@ order: 2
 group: components
 ---
 
-## FilterLayout
-
 Advanced and customizable layout component for product filters in React applications. It contains a mobile and a desktop version. It's essentially a wrapper around `FiltersContainer<T>`.
 
 The `FilterLayout` component is a responsive container for filters. It includes the ability to toggle between different filter categories and apply filters on both mobile and desktop viewports. The component employs a `side-by-side layout` for tablet and larger screens, while using a `dialog sheet` (or drawer) for mobile devices.
+
+## Basic example
 
 :::info
 Tip: Try resizing!
@@ -16,7 +16,7 @@ Tip: Try resizing!
 <code src="./examples/filter-layout-example-basic.tsx"></code>
 
 
-#### Api
+## Api
 
 | Property               | Type                                                   | Description                                                                  |
 |------------------------|--------------------------------------------------------|------------------------------------------------------------------------------|
