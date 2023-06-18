@@ -199,7 +199,7 @@
 }
 
 .dumi-default-previewer-demo {
-    padding: 0px;
+    padding: 0px !important;
 }
 
 .dumi-default-previewer {
@@ -285,6 +285,6 @@ body, .dumi-default-doc-layout, .markdown {
 
 #src-simple-product-layout-demo-simple-product-layout-basic-example .dumi-default-previewer-demo{
     max-height: 60vh !important;
-    overflow-y: auto;
+    overflow-y: auto !important;
 
 }
